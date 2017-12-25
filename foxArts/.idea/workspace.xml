@@ -113,7 +113,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../fox" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,12 +138,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514216450029</updated>
       <workItem from="1514216451439" duration="115000" />
-      <workItem from="1514216915643" duration="181000" />
+      <workItem from="1514216915643" duration="787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296000" />
+    <option name="totallyTimeSpent" value="902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

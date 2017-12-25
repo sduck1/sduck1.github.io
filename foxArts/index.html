@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>FoxArts</title>
+    <title>Bootstrap 101 Template</title>
     <link rel="stylesheet" href="assets/css/libs/font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link href="assets/css/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
+
 </head>
 <body>
 
@@ -54,7 +54,7 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse menu-block" id="bs-example-navbar-collapse-1">
-                        <ul class="nav menu-link">
+                        <ul id="menu" class="nav menu-link">
                             <li class="category active"><a href="#working-out"><span class="hh-capital">Р</span>азработка</a></li>
                             <li class="category"><a href="#design"><span class="hh-capital">Д</span>изайн</a></li>
                             <li class="category"><a href="#advancement"><span class="hh-capital">П</span>родвижение</a></li>
@@ -365,35 +365,41 @@
 
     <!--</div>-->
 
-    <footer class="footer container">
+    <footer class="container">
+        <div class="footer">
+            <div class="block-vk">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </div>
 
-        <div class="block-vk">
-            <i class="fa fa-vk" aria-hidden="true"></i>
+            <div  class="list-menu">
+
+                <div><a href="#">Разработка</a></div>
+                <div><a href="#">Дизайн</a></div>
+                <div><a href="#">Продвижение</a></div>
+                <div><a href="#">Преимущества</a></div>
+                <div><a href="#">Контакты</a></div>
+
+            </div>
+            <div class="block_tel">
+                <a href=""><span>+7 900</span> 800-20-30</a>
+            </div>
         </div>
 
-        <div class="list-menu">
-
-            <div><a href="#">Разработка</a></div>
-            <div><a href="#">Дизайн</a></div>
-            <div><a href="#">Продвижение</a></div>
-            <div><a href="#">Преимущества</a></div>
-            <div><a href="#">Контакты</a></div>
-            
-        </div>
-        <div class="block_tel">
-            <a href=""><span>+7 900</span> 800-20-30</a>
-        </div>
 
     </footer>
 
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src="assets/js/script.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="assets/css/libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/script.js"></script>
+
 </body>
 </html>
 
