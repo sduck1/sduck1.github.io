@@ -89,6 +89,22 @@ body {
     background-color: transparent;
 }
 
+#menu li a:after {
+    content: '/';
+    font-family: 'Roboto',sans-serif;
+    color: #df816b;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: left;
+    position: absolute;
+    padding-left: 9px;
+}
+
+#menu li:last-child a:after {
+    content: '';
+}
+
 .hh {
     width: 200px;
 }
