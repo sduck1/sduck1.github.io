@@ -81,6 +81,14 @@ body {
     background-color: transparent;
 }
 
+#menu li a:focus {
+    background-image: linear-gradient(2deg, #f7ce78 8%, #f7656d 83%);
+    background-repeat: no-repeat;
+    background-position: 50% 88%;
+    background-size: 78% 3px;
+    background-color: transparent;
+}
+
 .hh {
     width: 200px;
 }
