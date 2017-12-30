@@ -1,0 +1,188 @@
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebar {
+    background: #f2f2f2;
+    border-radius: 5px 5px;
+    width: 25%;
+}
+
+/*Главная редизайн*/
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.bord_line {
+    border-bottom: 1px solid red;
+    width: 461px;
+    text-align: center;
+}
+
+.flex_block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.block_img1 img {
+    width: 100%;
+}
+
+.block_img1 {
+    text-align: center;
+    color:  #333333;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+}
+
+.block_text {
+    padding: 0 50px;
+    text-align: justify;
+}
+
+.block_text_start {
+    align-self: flex-start;
+    padding: 0 50px;
+}
+
+.block_list_start {
+    align-self: flex-start;
+    padding: 0 65px;
+}
+
+.marg_top50 {
+    margin-top: 50px;
+}
+
+.block_text_start2 {
+    align-self: flex-start;
+}
+
+.block_list_start2 {
+    align-self: flex-start;
+    padding: 0 15px;
+}
+
+#btn1 {
+    width: 462px;
+    height: 53px;
+    color: white;
+    background:#cd0000;
+    outline: none;
+    border:none;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@media screen and  (max-width: 319px){
+
+    .flex_block1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bord_line {
+        width: 100%;
+    }
+
+    .block_text {
+        padding: 0;
+    }
+
+    .block_text_start {
+        padding: 0;
+    }
+
+    .block_list_start {
+        padding: 0 19px;
+    }
+
+}
+@media screen and (min-width:320px) and (max-width: 375px){
+
+    .flex_block1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bord_line {
+        width: 100%;
+    }
+
+    .block_text {
+        padding: 0;
+    }
+
+    .block_text_start {
+        padding: 0;
+    }
+
+    .block_list_start {
+        padding: 0 19px;
+    }
+
+}
+@media screen and (min-width:376px) and (max-width: 569px){
+
+    .flex_block1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bord_line {
+        width: 100%;
+    }
+
+    .block_text {
+        padding: 0;
+    }
+
+    .block_text_start {
+        padding: 0;
+    }
+
+    .block_list_start {
+        padding: 0 19px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
