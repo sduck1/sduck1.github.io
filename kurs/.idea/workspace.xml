@@ -14,8 +14,8 @@
       <file leaf-file-name="style.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1257">
-              <caret line="1148" column="27" lean-forward="true" selection-start-line="1148" selection-start-column="27" selection-end-line="1148" selection-end-column="27" />
+            <state relative-caret-position="409">
+              <caret line="1093" column="23" lean-forward="false" selection-start-line="1093" selection-start-column="23" selection-end-line="1093" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -25,8 +25,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.block-kurs_info</find>
       <find>.block-kurs3</find>
+      <find>.block-kurs_info</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -43,7 +43,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -112,15 +112,15 @@
       <option name="presentableId" value="Default" />
       <updated>1515614144169</updated>
       <workItem from="1515614145535" duration="425000" />
-      <workItem from="1515614717128" duration="1618000" />
+      <workItem from="1515614717128" duration="1712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2043000" />
+    <option name="totallyTimeSpent" value="2137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -163,8 +163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1257">
-          <caret line="1148" column="27" lean-forward="true" selection-start-line="1148" selection-start-column="27" selection-end-line="1148" selection-end-column="27" />
+        <state relative-caret-position="409">
+          <caret line="1093" column="23" lean-forward="false" selection-start-line="1093" selection-start-column="23" selection-end-line="1093" selection-end-column="23" />
           <folding />
         </state>
       </provider>
