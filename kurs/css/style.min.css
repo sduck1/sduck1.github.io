@@ -1132,8 +1132,7 @@ circle:nth-child(2n) {
         margin-top: 20px;
         width: 100%;
         height: 370px;
-
-        background: url("../img/push.svg") no-repeat;
+        background: url(../img/push.svg) no-repeat;
         background-size: contain;
         position: relative;
         border-radius: 6px 6px 30px 30px;
@@ -1182,7 +1181,7 @@ circle:nth-child(2n) {
         background-color: #000000;
         opacity: 0.8;
         margin-top: 104px;
-        border-radius: 0 0 9px 9px;
+        border-radius: 0;
     }
 
 }
