@@ -1091,7 +1091,6 @@ circle:nth-child(2n) {
     opacity: 0.4;
     bottom: 0;
     text-align: center;
-    border-radius: 10px;
 }
 
 .block-kurs-text  {
