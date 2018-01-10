@@ -16,8 +16,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-357">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="59">
+                  <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -30,8 +30,8 @@
           <file leaf-file-name="style.min.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.min.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="95">
-                  <caret line="413" column="1" lean-forward="false" selection-start-line="413" selection-start-column="1" selection-end-line="413" selection-end-column="1" />
+                <state relative-caret-position="358">
+                  <caret line="746" column="22" lean-forward="false" selection-start-line="746" selection-start-column="22" selection-end-line="746" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -41,9 +41,15 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.block_2-box</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.min.css" />
       </list>
     </option>
@@ -124,12 +130,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515596600868</updated>
       <workItem from="1515596602413" duration="22000" />
-      <workItem from="1515614571936" duration="744000" />
+      <workItem from="1515614571936" duration="2017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="766000" />
+    <option name="totallyTimeSpent" value="2039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -173,18 +179,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.min.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="413" column="1" lean-forward="false" selection-start-line="413" selection-start-column="1" selection-end-line="413" selection-end-column="1" />
+        <state relative-caret-position="59">
+          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="358">
+          <caret line="746" column="22" lean-forward="false" selection-start-line="746" selection-start-column="22" selection-end-line="746" selection-end-column="22" />
           <folding />
         </state>
       </provider>
