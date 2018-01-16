@@ -17,17 +17,17 @@
 
 @font-face {
     font-family: 'RobotoSlab regular';
-    src: url('/assets/font/RobotoSlab-Regular.ttf');
+    src: url('../font/RobotoSlab-Regular.ttf');
 }
 
 @font-face {
     font-family: 'RobotoSlab bold';
-    src: url('/assets/font/RobotoSlab-Bold.ttf');
+    src: url('../font/RobotoSlab-Bold.ttf');
 }
 
 @font-face {
     font-family: 'RobotoSlab light';
-    src: url('/assets/font/RobotoSlab-Light.ttf');
+    src: url('../font/RobotoSlab-Light.ttf');
 }
 
 /*шрифты end*/
