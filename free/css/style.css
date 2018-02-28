@@ -2275,7 +2275,11 @@ body .swiper-button-next:hover {
   }
 
 }
-
+@media (min-width: 1200px) {
+.section-cost {
+  height: 115vh;
+}
+}
 
 #showBlock2 {
   display: none;
