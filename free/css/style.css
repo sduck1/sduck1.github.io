@@ -2273,8 +2273,56 @@ body .swiper-button-next:hover {
   .hide2 {
     display: none;
   }
+  .section-main {
+    height: 70vh;
+  }
+
+  .section-innovative {
+    text-align: center;
+    height: 100%;
+    padding: 53px 0;
+  }
+
+  .section-main {
+    height: 100%;
+  }
+
+  .section-training {
+    height: 67vh;
+  }
+
+  .section-course {
+    height: 67vh;
+  }
+
+  .section-book {
+    height: 67vh;
+    padding: 83px 0 80px;
+  }
+
+  .section-gameplay {
+    padding: 100px 0;
+    height: 67vh;
+  }
+
+  .section-teacher {
+    height: 67vh;
+  }
+
+  .section-cost {
+    padding: 80px 0 80px;
+    height: 67vh;
+  }
+
+  .section-register {
+    padding: 70px 0 60px;
+    height: 67vh;
+  }
 
 }
+
+
+
 @media (min-width: 1200px) {
 .section-cost {
   height: 115vh;
