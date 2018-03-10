@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!--<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">-->
+  <!---->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">-->
+    <link rel="stylesheet" href="assets/js/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-<body data-aos-once>
+<body style="overflow-x: hidden">
 
     <section class="section-prezed">
         <div class="block1-img">
@@ -20,7 +25,7 @@
             <div class="container">
 
                 <div class="block1-flex">
-                    <div class="block1-flex-body">
+                    <div class="block1-flex-body pad-left">
                         <p class="head-ff" data-aos="fadet" data-aos-delay>Президентский
                             статус</p>
                         <p data-aos="fadet" data-aos-delay="150">
@@ -30,7 +35,7 @@
                             и пунктуации
                         </p>
                         <div class="block-btn" data-aos="fadet" data-aos-delay="150">
-                            <button class="btn-show">
+                            <button id="btn1" onclick="showTime('btn1')" class="btn-show">
                                 Купить
                             </button>
                         </div>
@@ -51,16 +56,16 @@
             </p>
             <div class="block2">
 
-                <div class="block2-info">
+                <div class="block2-info pad-left">
                     <p class="head-ff2 hidden" data-aos="fadet" data-aos-delay>
                         Два уникальных
                         тренажёра
                     </p>
 
                     <div class="block2-btn2" data-aos="fadet" data-aos-delay="150">
-                        <button class="btn-work">
+                        <a  href="https://youtu.be/ExF_yP4s46Y" data-fancybox data-aos="fade" data-aos-delay="150"  id="btn2_2" class="btn-work">
                             Как это работает?
-                        </button>
+                        </a>
                     </div>
 
                     <p class="padd-top40" data-aos="fadet" data-aos-delay="150">
@@ -69,7 +74,7 @@
                     </p>
 
                     <div class="block2-btn" data-aos="fadet" data-aos-delay="150">
-                        <button class="btn-show">
+                        <button id="btn2" onclick="showTime('btn2')" class="btn-show">
                             Купить
                         </button>
                     </div>
@@ -80,7 +85,7 @@
                     <div class="block2-img-1" data-aos="fade-left" data-aos-delay="150">
                         <img src="assets/img/training-1.svg"  alt="">
                     </div>
-                    <div class="block2-img-2" data-aos="fade-left" data-aos-delay="300">
+                    <div class="block2-img-2" data-aos="fade-left" data-aos-delay="150">
                         <img src="assets/img/training-2.svg"  alt="">
                     </div>
 
@@ -99,7 +104,7 @@
             </p>
             <div class="block3-flex">
 
-                <div class="block3-flex-info">
+                <div class="block3-flex-info pad-left">
 
                     <p class="block3-flex-head hidden" data-aos="fadet" data-aos-delay>
                         15 занятий подготовки
@@ -107,9 +112,9 @@
                     </p>
 
                     <div class="block3-flex-btn1" data-aos="fadet" data-aos-delay="150">
-                        <button id="btn3" class="btn-work">
+                        <a id="btn3" href="https://youtu.be/ExF_yP4s46Y" data-fancybox class="btn-work">
                             Как это работает?
-                        </button>
+                        </a>
                     </div>
 
                     <p class="block3-text" data-aos="fadet" data-aos-delay="150">Занятия проходят на нашем сайте в режиме
@@ -118,7 +123,7 @@
 
 
                     <div class="block2-btn" data-aos="fadet" data-aos-delay="150">
-                        <button id="btn3_2" class="btn-show">
+                        <button id="btn3_2" onclick="showTime('btn3_2')" class="btn-show">
                             Купить
                         </button>
                     </div>
@@ -138,7 +143,7 @@
                         </p>
                     </div>
 
-                    <div  id="kurs2" class="block3-flex-kurs" data-aos="fade-left" data-aos-delay="300">
+                    <div  id="kurs2" class="block3-flex-kurs" data-aos="fade-left" data-aos-delay="150">
                         <p>Курс подготовки
                             к ЕГЭ по русскому</p>
                         <p class="block3-flex-kurs-text-right">
@@ -266,7 +271,7 @@
                 </div>
 
                 <div class="block4-btn">
-                    <button class="btn-show">
+                    <button id="btn4" onclick="showTime('btn4')" class="btn-show">
                         Купить
                     </button>
                 </div>
@@ -312,7 +317,7 @@
                         </div>
 
                         <div class="block5-btn" data-aos="fadet" data-aos-delay="300">
-                            <button class="btn-show">
+                            <button id="btn5" onclick="showTime('btn5')" class="btn-show">
                                 Купить
                             </button>
                         </div>
@@ -332,32 +337,32 @@
         <div class="container">
              <div class="block6-flex">
 
-                 <div class="block6-flex-info" data-aos="fadet" data-aos-delay="150">
+                 <div class="block6-flex-info marr-left" data-aos="fadet" data-aos-delay="150">
                     <b data-aos="fadet" data-aos-delay="150">
                         Президентский статус
                     </b>
                      <p data-aos="fadet" data-aos-delay="150">6 месяцев доступа</p>
                      <p data-aos="fadet" data-aos-delay="300">15 уроков</p>
-                     <p data-aos="fadet" data-aos-delay="450">30 часов</p>
-                    <p data-aos="fadet" data-aos-delay="600">Все 6 видов тренажёров</p>
+                     <p data-aos="fadet" data-aos-delay="300">30 часов</p>
+                    <p data-aos="fadet" data-aos-delay="300">Все 6 видов тренажёров</p>
                  </div>
                  <div class="block6-flex-block">
                         <p class="block6-flex-block-head" data-aos="fade-left" data-aos-delay="300">
                             Получить президентский
                             статус за
                         </p>
-                     <p class="block6-flex-block-price" data-aos="fade-left" data-aos-delay="300">
+                     <p class="block6-flex-block-price" data-aos="fade-left" data-aos-delay="150">
                          990 <span>руб.</span>
                      </p>
 
                      <div class="block6-btn">
-                         <button id="btn6" class="btn-show" data-aos="fade-left" data-aos-delay="300">
+                         <button id="btn6" onclick="showTime('btn6')" class="btn-show" data-aos="fade-left" data-aos-delay="150">
                              Купить
                          </button>
                      </div>
 
-                     <div class="block6-btn2" data-aos="fade-left" data-aos-delay="300">
-                         <a id="btn6_2">У меня есть промокод</a>
+                     <div class="block6-btn2" data-aos="fade-left" data-aos-delay="150">
+                         <a id="btn6_2" onclick="showTime3('btn6_2')">У меня есть промокод</a>
                      </div>
 
                  </div>
@@ -401,15 +406,53 @@
     </footer>
 
 
+    <div id="myModal" class="modal2">
+        <div class="modal-content2">
+            <span class="close2"><img src="assets/img/cancel.png" alt=""></span>
+            <p>Вас перебросит на сайт платежной системы через 3...2...1... секунду</p>
+        </div>
+    </div>
 
 
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<div id="myModal2" class="modal2">
+       <div class="myModal_content">
+           <span class="close2"><img src="assets/img/cancel.png" alt=""></span>
+           здесь ваше видео
+       </div>
+</div>
+
+    <div id="myModal3" class="block-show_promo">
+
+        <div class="myModal3_content">
+            <span class="close3">&times;</span>
+            <p class="head-modal">Пожалуйста введите промокод</p>
+            <div class="block-form">
+                <form >
+                    <input id="input_text" type="text" placeholder="Промокод">
+                    <input id="input_btn" type="submit" value="Активировать">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/dist/jquery.fancybox.min.css">
+    <script src="assets/dist/jquery.fancybox.min.js"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>-->
     <script src="assets/js/script.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>-->
 
 </body>
 </html>
