@@ -249,6 +249,7 @@ html,body {
     margin-top: 24px;
     border: 4px solid #18181d;
     padding: 14px;
+    z-index: 99;
 }
 
 .block_feedback:hover {
@@ -357,6 +358,7 @@ html,body {
     align-self: flex-start;
     margin-top: 30px;
     margin-left: 40px;
+    z-index: 99;
 }
 
 
@@ -451,6 +453,7 @@ a:focus, a:hover {
 
 .block-4__box-btn {
     padding-top: 40px;
+    z-index: 99;
 }
 
 .block-4__box-btn a {
@@ -463,6 +466,11 @@ a:focus, a:hover {
     line-height: 18px;
     color: #18181d;
     padding: 13px 21px 13px 22px;
+}
+
+.block-4__box-btn a:hover {
+color: white;
+    background:#18181d ;
 }
 
 .block-4__box {
@@ -764,166 +772,20 @@ form {
 }
 
 
-/*@media screen and (min-width:320px) and (max-width: 375px){}*/
-/*@media screen and (min-width:376px) and (max-width: 569px){}*/
-/*@media screen and (min-width: 570px) and (max-width: 767px){}*/
-/*@media screen and (min-width: 768px) and (max-width: 991px){*/
+@media screen and (min-width:320px) and (max-width: 375px){}
+@media screen and (min-width:376px) and (max-width: 569px){}
+@media screen and (min-width: 570px) and (max-width: 767px){}
+@media screen and (min-width: 768px) and (max-width: 991px){
 
-    /*.block-1 {*/
-        /*height: 74%;*/
-        /*padding-top: 42px;*/
-    /*}*/
-
-    /*.block1_text {*/
-        /*width: 87.5%;*/
-        /*padding-top: 15px;*/
-    /*}*/
-
-    /*.hh_slide1 {*/
-        /*font-size: 2.5em;*/
-    /*}*/
-
-    /*.hh {*/
-        /*width: 121px;*/
-    /*}*/
-
-    /*.menu-link a {*/
-        /*font-size: 1em;*/
-    /*}*/
-
-    /*.menu-tel {*/
-        /*padding-left: 18px;*/
-    /*}*/
-
-    /*.menu-tel a {*/
-        /*font-size: 26px;*/
-    /*}*/
-
-    /*.block-2__box {*/
-        /*flex-direction: column;*/
-        /*width: 100%;*/
-        /*align-items: center;*/
-    /*}*/
-
-    /*.block-2__box-1 {*/
-        /*width: 92%;*/
-    /*}*/
-
-    /*.block-2__box-2 {*/
-        /*width: 60%;*/
-    /*}*/
-
-    /*.block-2__box-btn {*/
-        /*align-self: center;*/
-        /*margin-top: 60px;*/
-        /*margin-left: 0;*/
-    /*}*/
-
-    /*.block-4__box {*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*width: 100%;*/
-    /*}*/
-
-    /*.block-4__box-1 {*/
-        /*align-items: center;*/
-        /*width: 91%;*/
-    /*}*/
-
-    /*.block-4__box-2 {*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*margin-top: 40px;*/
-    /*}*/
-
-    /*.block-6__block-info {*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*width: 100%;*/
-        /*opacity: 1;*/
-    /*}*/
-
-    /*.block-6__text {*/
-        /*width: 91%;*/
-    /*}*/
-
-    /*.footer {*/
-        /*width: 941px;*/
-    /*}*/
-
-/*}*/
-/*@media screen and (min-width: 992px) and (max-width: 1199px){*/
-
-    /*.hh {*/
-        /*width: 121px;*/
-    /*}*/
-
-    /*.menu-link a {*/
-        /*font-size: 1em;*/
-    /*}*/
-
-    /*.menu-tel {*/
-        /*padding-left: 18px;*/
-    /*}*/
-
-    /*.menu-tel a {*/
-        /*font-size: 26px;*/
-    /*}*/
-
-    /*.block-2__box {*/
-        /*flex-direction: column;*/
-        /*width: 100%;*/
-        /*align-items: center;*/
-    /*}*/
-
-    /*.block-2__box-1 {*/
-        /*width: 92%;*/
-    /*}*/
-
-    /*.block-2__box-2 {*/
-        /*width: 60%;*/
-    /*}*/
-
-    /*.block-2__box-btn {*/
-        /*align-self: center;*/
-        /*margin-top: 60px;*/
-        /*margin-left: 0;*/
-    /*}*/
-
-    /*.block-4__box {*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*width: 100%;*/
-    /*}*/
-
-    /*.block-4__box-1 {*/
-        /*align-items: center;*/
-        /*width: 91%;*/
-    /*}*/
-
-    /*.block-4__box-2 {*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*margin-top: 40px;*/
-    /*}*/
-
-    /*.block-6__block-info {*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*width: 100%;*/
-        /*opacity: 1;*/
-    /*}*/
-
-    /*.block-6__text {*/
-        /*width: 91%;*/
-    /*}*/
-
-    /*.footer {*/
-        /*width: 941px;*/
-    /*}*/
-
-/*}*/
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
 
 
+}
+
+@media screen and (min-width: 1300px){
+
+
+}
 
 
