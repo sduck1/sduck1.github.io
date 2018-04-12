@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content_text {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+}
+
+.content h2 {
+    margin-top: 20px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.block_content {
+    width: 50%;
+    background: rgb(242,241,239);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.block_content img {
+    height: 60px;
+}
+
+.block_content h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.block_content p {
+    font-size: 13px;
+}
+
+.bg-color {
+    background: rgb(230,229,227) !important;
+}
+
+.btn {
+    background: rgb(255,238,88);
+    color: black;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 8px 20px;
+}
+
+.btn:focus {
+    outline: none;
+    border: none;
+}
+
+
+@media screen and (min-width:320px) and (max-width: 375px){
+
+    .block_content {
+        width: 100%;
+    }
+
+    .content_text {
+        font-size: 13px;
+    }
+
+    .block_content p {
+        font-size: 13px;
+    }
+
+    .block1 {
+        order: 1;
+    }
+
+    .block2 {
+        order: 2;
+    }
+
+    .block4 {
+        order: 3;
+    }
+
+    .block3 {
+        order: 4;
+    }
+
+}
+@media screen and (min-width:376px) and (max-width: 569px){
+
+    .block_content {
+        width: 100%;
+    }
+
+    .block1 {
+        order: 1;
+    }
+
+    .block2 {
+        order: 2;
+    }
+
+    .block4 {
+        order: 3;
+    }
+
+    .block3 {
+        order: 4;
+    }
+
+}
+@media screen and (min-width: 570px) and (max-width: 767px){
+
+    .block_content {
+        width: 100%;
+    }
+
+    .block1 {
+        order: 1;
+    }
+
+    .block2 {
+        order: 2;
+    }
+
+    .block4 {
+        order: 3;
+    }
+
+    .block3 {
+        order: 4;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
