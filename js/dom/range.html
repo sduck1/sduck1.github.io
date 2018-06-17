@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #block {
+            width: 200px;
+            height: 100px;
+            background: #5aa84d;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="block1">
+        <p>Верхний левый угол
+            <input type="range" id="rtl" min="0" max="100" value="0" oninput="fu();">
+            <input type="text" id="ttl" value="0">
+        </p>
+        <p>Верхний правый угол
+            <input type="range" id="rtr" min="0" max="100" value="0" oninput="fu();">
+            <input type="text" id="ttr" value="0">
+        </p>
+        <p>Нижний левый угол
+            <input type="range" id="rbr" min="0" max="100" value="0" oninput="fu();">
+            <input type="text" id="tbl" value="0">
+        </p>
+        <p>Нижний правый угол
+            <input type="range" id="rbl" min="0" max="100" value="0" oninput="fu();">
+
+            <input type="text" id="tbr" value="0">
+        </p>
+
+</div>
+
+<div id="block">
+
+</div>
+
+
+
+</body>
+</html>
+
+
+<script>
+
+    const fu =()=>{
+        let r1 = document.getElementById('rtl').value;
+        let r2 = document.getElementById('rtr').value;
+        let r3 = document.getElementById('rbl').value;
+        let r4 = document.getElementById('rbr').value;
+
+        let t1 = document.getElementById('ttl');
+        let t2 = document.getElementById('ttr');
+        let t3 = document.getElementById('tbl');
+        let t4 = document.getElementById('tbr');
+
+        t1.value =r1;
+        t2.value =r2;
+        t3.value =r4;
+        t4.value =r3;
+
+        let block = document.getElementById('block');
+
+        block.style.borderRadius = r1+'px '+r2+'px '+r4+'px '+r3+'px ';
+
+    };
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

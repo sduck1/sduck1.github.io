@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="radio" name="r1" value="1">1
+<input type="radio" name="r1" value="2">2
+<input type="radio" name="r1" value="3">3
+
+<input type="submit" onclick="f1('r1');" value="sad">
+
+</body>
+</html>
+
+
+<script>
+
+const f1 = (name) => {
+    let redi = document.getElementsByName(name);
+    for(let i = 0; i< redi.length ; i++){
+        if(redi[i].checked){
+
+            alert('elem # ' + i + ' value' + redi[i].value);
+        }
+    }
+}
+
+</script>

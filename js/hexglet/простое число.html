@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+    const isPrime  = (num) => {
+
+        if(num===1) return true;
+        let counter = 0;
+
+        for(counter=2; counter<=num; counter++ ){
+
+
+            if(num%counter ===0){
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+    };
+
+
+    const bigLettersCount = (str) => {
+        // BEGIN (write your solution here)
+        let count = '';
+        for(let i=0; i<str.length; i++) {
+            if(str[i].toUpperCase() === str[i]){
+                count=count+ str[i];
+            }
+        }
+        return count.length;
+        // END
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

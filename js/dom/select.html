@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #block1 {
+            width: 100px;
+            height: 100px;
+            background: #2a5779;
+        }
+    </style>
+
+</head>
+<body>
+
+<select name="" id="mySelect" onchange="fu();">
+    <option value="">Apple</option>
+    <option value="">samsug</option>
+    <option value="">Huwie</option>
+    <option value="">Zopo</option>
+</select>
+
+<input type="range" min="0" max="200" step="2" oninput="fu1();" id="range">
+
+<input type="text" id="text">
+
+<p id="block"></p>
+
+<div id="block1" class="div">
+
+</div>
+
+
+</body>
+</html>
+
+<script>
+
+    const fu =()=>{
+        let sel = document.getElementById('mySelect').selectedIndex;
+        let options = document.getElementById('mySelect').options;
+
+        console.log(options[sel].text);
+    };
+
+    const fu1 = () =>{
+        let ran = document.getElementById('range');
+
+        let p = document.getElementById('block');
+        p.innerHTML = ran.value;
+
+        let text = document.getElementById('text');
+        text.value =  ran.value;
+
+        let blockwidth = document.getElementById('block1');
+        blockwidth.style.width = ran.value+'px';
+
+        let div = document.getElementsByClassName('div');
+        div.offsetWidth = ran.value;
+    };
+
+</script>

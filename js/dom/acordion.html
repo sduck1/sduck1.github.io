@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button.accordion {
+            background: #eee;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+        button.accordion.active,
+        button.accordion:hover{
+            background: #ddd;
+        }
+        .panel {
+            padding: 0 18px;
+            background: white;
+            display: none;
+        }
+        .panel.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="accordion">section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ipsam?</p>
+    </div>
+    <button class="accordion">section 2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ipsam?</p>
+    </div>
+    <button class="accordion">section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ipsam?</p>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+
+    let acc = document.getElementsByClassName('accordion');
+    let i ;
+    for(i=0; i<acc.length; i++){
+        acc[i].onclick = function () {
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('show');
+        }
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

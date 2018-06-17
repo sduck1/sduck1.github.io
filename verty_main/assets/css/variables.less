@@ -1,0 +1,50 @@
+
+@font-face {
+   font-family:'Engravers Gothic Regular';
+    src: url("../../assets/css/font/Engravers Gothic Regular.otf");
+    src: url("../../assets/css/font/EngraversGothic BT.otf");
+}
+
+@font:'Engravers Gothic Regular';
+@bg-header:#000;
+@large-big: ~"only screen and (min-width: 1300px) ";
+@large: ~"only screen and (min-width: 1200px) and (max-width: 1299px)";
+@desktop:   ~"only screen and (min-width: 993px) and (max-width: 1199px)";
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 992px)";
+@tablet-strict: ~"only screen and (min-width: 570px) and (max-width: 767px)";
+@phone:      ~"only screen and (min-width: 376px) and (max-width: 569px)"    ;
+@phone-strict: ~"only screen and (min-width: 320px) and (max-width: 375px)";
+
+@display: ~"only screen and (max-width: 992px)" ;
+@display70:~"only screen and (max-width: 767px)";
+
+
+.flex-row() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-column() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-size_small () {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.btn () {
+  background-color: #801840;
+  border: none;
+  outline: none;
+}
+
+.hh(){
+  font-size: 60px;
+  font-weight: 400;
+}
+

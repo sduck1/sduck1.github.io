@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bordered {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+<img src="изображение/img/wujF5wUt9gY.jpg" height="300" alt="">
+<img src="изображение/img/wujF5wUt9gY.jpg" height="300" alt="">
+<img src="изображение/img/wujF5wUt9gY.jpg" height="300" alt="">
+
+
+
+</body>
+</html>
+
+<script>
+    document.onclick = function (event) {
+//            console.log(event.target.tagName);
+        event = event || window.event;
+            if (event.target.tagName == 'IMG') {
+                event.target.classList.add('bordered');
+            }
+    }
+</script>

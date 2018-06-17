@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="">
+    <input  onblur="console.log('x=0')"/>ok
+</form>
+
+<p onclick="color(this);" onblur="color_norm(this);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, tenetur.</p>
+
+</body>
+</html>
+
+<script>
+
+
+    function color(element) {
+       element.style.color = 'red';
+       element.style.background = 'green';
+        console.log('x=1')
+    }
+
+    function color_norm(element) {
+        element.style.color = 'black';
+    }
+
+</script>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #mydiv {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        background-color: green;
+        margin-top: 20px;
+    }
+
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+    }
+
+    .success {
+        background: #4caf50;
+    }
+    .info {
+         background-color: #2196f3;
+     }
+    .warning {
+        background-color: #ff9800;
+    }
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .closebtn:hover {
+        color: black;
+    }
+
+</style>
+<body>
+
+    <button onclick="myFuntion()">click</button>
+    <div id="mydiv">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis delectus distinctio et facilis quam.
+    </div>
+
+
+    <div class="alert">
+        <span class="closebtn">
+            &times;
+
+        </span>
+        <strong>Danger</strong>
+    </div>
+    <div class="alert success">
+        <span class="closebtn">
+            &times;
+
+        </span>
+        <strong>Success!</strong>
+    </div>
+    <div class="alert info">
+        <span class="closebtn">
+            &times;
+
+        </span>
+        <strong>info</strong>
+    </div>
+    <div class="alert warning">
+        <span class="closebtn">
+            &times;
+
+        </span>
+        <strong>warning</strong>
+    </div>
+
+</body>
+</html>
+<script>
+    function myFuntion() {
+        let x= document.getElementById('mydiv');
+        if(x.style.display ==='none'){
+            x.style.display = 'block';
+        }
+        else  {
+            x.style.display ='none';
+        }
+    }
+
+
+    let close = document.getElementsByClassName('closebtn');
+    let i;
+    for (i=0;i<close.length;i++) {
+        close[i].onclick = function () {
+            let div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function () {
+                div.style.display ='none';
+            }, 600);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

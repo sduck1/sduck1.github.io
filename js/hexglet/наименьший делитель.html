@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    const smallestDivisor = (num) => {
+// BEGIN (write your solution here)
+        if (num < 1) return NaN;
+        if (num === 1) {
+            return num;
+        }
+        let result = 2 ;
+        let counter = 1;
+
+        while (num % result !== 0) {
+
+            result+= counter;
+            counter++;
+        }
+
+        return result;
+    };
+
+
+    const smallestDivisor2 = (num) => {
+// BEGIN (write your solution here)
+        if (num < 1) {
+            return NaN;
+        }
+        if (num === 1) {
+            return num;
+        }
+
+        let counter = 2;
+        while (num % counter !== 0) {
+            counter=counter+1;
+        }
+
+        return counter;
+// END
+    };
+
+    console.log(smallestDivisor(121));
+</script>
+
+</body>
+</html>

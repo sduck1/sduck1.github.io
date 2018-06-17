@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<body>
+
+
+<select id="page-size" class="control">
+    <option selected>Размер страницы</option>
+</select>
+
+
+
+</body>
+</html>
+
+<script>
+
+ var   pageSizes = {
+        "20x20": {47: "Digital Paper Type DP II", 53: "Digital Pearl Paper"},
+        "19х25": {53: "Digital Paper Type DP II", 57: "Digital Pearl Paper"},
+        "20х30": {57: "Digital Paper Type DP II", 65: "Digital Pearl Paper"},
+        "25х25": {63: "Digital Paper Type DP II", 69: "Digital Pearl Paper"},
+        "30х30": {76: "Digital Paper Type DP II", 85: "Digital Pearl Paper"},
+        "35x35": {105: "Digital Paper Type DP II", 117: "Digital Pearl Paper"},
+        "30х40": {105: "Digital Paper Type DP II", 117: "Digital Pearl Paper"},
+        "40х40": {212: "Digital Paper Type DP II", 238: "Digital Pearl Paper"}
+    };
+    var html = '', size, price;
+
+  for(size in pageSizes){
+        for(price in pageSizes[size]){
+           html +='<option>'+size +'-' + price+'-' + pageSizes[size][price]+'</option>';
+
+        }
+  }
+ console.log(html);
+
+
+ var a = document.getElementsByClassName('control');
+ a.innerHTML = '<option>1</option>';
+
+ $('.control').append(html);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

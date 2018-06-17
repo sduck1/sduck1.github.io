@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+    const isPalindrome = (str) => {
+
+        if(str.length <= 1) return true;
+
+       let beginIndex = str[0];
+       let lastIndex = str[str.length-1];
+
+       if(beginIndex !== lastIndex) return false;
+
+       const sub = str.substring(str,1,str.length-2);
+
+        console.log(str.length-2);
+        return isPalindrome(sub);
+    };
+
+    console.log(isPalindrome('topot'));
+
+
+</script>

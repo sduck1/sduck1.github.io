@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #myProgress {
+            position: relative;
+            width: 150px;
+            height: 30px;
+            background: #ddd;
+        }
+
+        #myBar {
+            position: absolute;
+            width: 10%;
+            height: 100%;
+            background-color:#4caf50
+        }
+
+        #label {
+            text-align: center;
+            height: 30px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+
+        <div id="myProgress">
+            <div id="myBar">
+                <div id="label">
+                    10%
+                </div>
+            </div>
+        </div>
+        <button onclick="move()">click</button>
+
+
+</body>
+</html>
+
+<script>
+
+    function move() {
+        let elem = document.getElementById('myBar');
+        let width = 10;
+        let id =setInterval(frame,100);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            }
+            else  {
+                width++;
+                elem.style.width = width +'%';
+                document.getElementById('label').innerHTML = width*1 + '%';
+
+            }
+        }
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

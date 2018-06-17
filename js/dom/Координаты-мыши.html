@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #test {
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test">
+
+    </div>
+    <p> X: <span id="offX"></span>
+
+    Y<span id="offY"></span>
+    </p>
+
+</body>
+</html>
+
+<script>
+
+    document.querySelector('#test').onmousemove = function (event) {
+        event = event || window.event;
+
+        document.querySelector('#offX').innerHTML = event.clientX;
+
+        document.querySelector('#offY').innerHTML = event.clientY;
+    };
+
+
+
+
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<textarea name="" id="in" cols="30" rows="10">
+
+</textarea>
+<textarea name="" id="out2" cols="30" rows="10">
+
+</textarea>
+
+<p id="out"></p>
+<hr>
+<p id="help"></p>
+<p id="out3"></p>
+
+</body>
+</html>
+
+<script>
+
+
+    document.getElementById('in').oninput = function () {
+        const offset = 3;
+        let help = document.getElementById('help');
+//        help.innerHTML = String.fromCharCode(527);
+        let str = this.value;
+        let out = '';
+
+        for (let i=0; i<str.length;i++){
+            let code = str.charCodeAt(i);
+            code = code + offset;
+            out+= String.fromCharCode(code);
+        }
+        document.getElementById('out').innerHTML = out;
+    };
+
+    document.getElementById('out2').oninput = function () {
+
+        const offset = 3;
+        let str = this.value;
+
+        let out = '';
+        for (let i=0; i<str.length;i++){
+            let code = str.charCodeAt(i);
+            code = code - offset;
+            out+= String.fromCharCode(code);
+        }
+
+
+        document.getElementById('out3').innerHTML = out;
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<script>
+
+
+    const sequenceSum = (a,b)=> {
+        let c =0;
+        if(a>b)  alert(NaN);
+        if(a===b) alert(a) ;
+        for (let i=a; i<=b;i++){
+          c+=i;
+        }
+        document.write(c);
+    };
+
+    const fu =n => {
+        const itter = (i , acc) =>{
+            if (i===1) return i;
+            return itter(i-1,i*acc);
+        };
+        return itter(n,1);
+    };
+
+
+    const sequenceSum2 = (a,b) =>{
+
+        const num = (begin,end ,n) =>{
+
+            if(begin===end) return n;
+
+            return begin+num(begin+1,begin+n);
+
+        };
+        return num(a,b,1);
+
+    };
+     sequenceSum(3,6);
+
+</script>
