@@ -1,0 +1,35 @@
+#game {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.block {
+    padding: 25px 39px;
+    font-family: fantasy,sans-serif;
+    font-size: 40px;
+
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.stroke {
+    background: #FBDD18;
+    width: 300px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 40px auto 0 auto;
+}

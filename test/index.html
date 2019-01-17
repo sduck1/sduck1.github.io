@@ -1,125 +1,289 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="app/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <title>Webim</title>
 </head>
 <body>
 
-    <div class="container">
-        <h2 class="mt-5"><span >LOCUS</span> ADVERTISING</h2>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!--<a class="navbar-brand" href="#">Navbar</a>-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="header d-flex align-items-center">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <ul class="d-flex header__block-login header__list justify-content-between">
+                    <li><a>ВХОД</a></li>
+                    <li><a>РЕГИСТРАЦИЯ</a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <label for="input_search">
-                        <img src="assets/img/search-icon.png" alt="">
-                        <input id="input_search" class="form-control mr-sm-2" type="search"  aria-label="Search">
-                    </label>
+                <div class="header__right">
+                    <ul class="d-flex menu-list header__list justify-content-lg-between">
+                        <li><a>ВОЗМОЖНОСТИ</a></li>
+                        <li><a>ТАРИФЫ</a></li>
+                        <li><a>ПАРТНЁРАМ</a></li>
+                        <li><a>ПОМОЩЬ</a></li>
+                    </ul>
 
-                </form>
+                    <div class="logo"></div>
+                </div>
             </div>
+        </div>
+
+    </header>
+
+    <div class="block-header-menu">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+                <ul class=" menu-list block-header-menu__list ">
+                    <li><a>ВОЗМОЖНОСТИ</a></li>
+                    <li><a>ТАРИФЫ</a></li>
+                    <li><a>ПАРТНЁРАМ</a></li>
+                    <li><a>ПОМОЩЬ</a></li>
+                </ul>
+                <ul class=" block-header-menu__list ">
+                    <li><a>ВХОД</a></li>
+                    <li><a>РЕГИСТРАЦИЯ</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar block-header-menu__img">
+            <button class="block-header-menu__btn navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
         </nav>
-        <section class="section-slide">
-            <div class="single-block">
-                <div class="slide-block"><h3>1</h3></div>
-                <div class="slide-block"><h3>2</h3></div>
-                <div class="slide-block"><h3>3</h3></div>
-            </div>
-        </section>
-        <section class="section-info">
-            <div class="row">
-                <div class="col-lg-2 col-12  block-info col-xs-12 col-sm-12 col-md-3">
-                    <img class="img1" src="assets/img/web-design(2).png" alt="">
-                    <p class="block-info_head">Web Design</p>
-                    <p class="block-info_text">Lorem ipsum dolor sit martamet, consectetur adipisicing elit, sed do.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-2  block-info col-xs-12 col-sm-12 col-md-3">
-                    <img src="assets/img/foto-raf(1).png" alt="">
-                    <p class="block-info_head">Photography</p>
-                    <p class="block-info_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-2 block-info col-xs-12 col-sm-12 col-md-3">
-                    <img src="assets/img/video(1).png" alt="">
-                    <p class="block-info_head">Video</p>
-                    <p class="block-info_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-2 block-info col-xs-12 col-sm-12 col-md-3">
-                    <img src="assets/img/bas-l-(1).png" alt="">
-                    <p class="block-info_head">Graphic Design</p>
-                    <p class="block-info_text">Lorem ipsum dolor sit martamet, consectetur adipisicing elit, sed do.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-2 block-info col-xs-12 col-sm-12 col-md-3">
-                    <img src="assets/img/e-ticaret(1).png" alt="">
-                    <p class="block-info_head">E-Commerce</p>
-                    <p class="block-info_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-2 block-info col-xs-12 col-sm-12 col-md-3">
-                    <img src="assets/img/programming(2).png" alt="">
-                    <p class="block-info_head">Programming</p>
-                    <p class="block-info_text">Lorem ipsum dolor sit amet, consectetur omty adipisicing elitry.
-                    </p>
-                </div>
-            </div>
-
-        </section>
-
-
     </div>
 
+    <section class="section section_dark">
+        <div class="container">
+            <span class="section__head">УСТАНОВКА WEBIM</span>
+            <p class="section__text">
+                Установка онлайн-консультанта Webim на ваш сайт не займет много времени.
+                Вы можете установить онлайн-консультант Webim на ваш сайт и протестировать
+                его в течение 7 дней бесплатно.
+            </p>
+            <div class="section__block-btn">
+                <a class="btn btn-link">ПОПРОБОВАТЬ БЕСПЛАТНО</a>
+                <a class="btn btn-link btn-link_2">ТАРИФЫ</a>
+            </div>
+        </div>
+    </section>
 
+    <section class="section section_light">
+        <div class="container">
+            <span class="section__head section__head_2">ПРОСТАЯ УСТАНОВКА</span>
+            <p class="section__text">
+                Установка онлайн-консультанта Webim не займет более 15 минут
+            </p>
+            <div class="section__orders">
+                <a class="order">
+                    <div class="order__number">1</div>
+                    <p class="order__link-text">Регистрация</p>
+                </a>
+                <a class="order">
+                    <div class="order__number">2</div>
+                    <p class="order__link-text">Установка HTML-кода</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <section class="section section_dark">
+        <div class="container">
+            <span class="section__head section__head_2">УСТАНОВКА HTML-КОДА</span>
 
+            <ul class="section__list">
+                <li>
+                    <a href="">Установка HTML-кода Webim для сайтов на Joomla</a>
+                    <p> Документация по внедрению сервиса Webim на сайтах, построенных на базе CMS Joomla.</p>
+                </li>
+                <li>
+                    <a href="">Установка HTML-кода Webim для сайтов на Wordrpess</a>
+                    <p>Документация по внедрению сервиса Webim на сайтах, построенных на базе Wordrpess.</p>
+                </li>
+                <li>
+                    <a href="">Установка HTML-кода Webim для сайтов на uCoz.ru</a>
+                    <p>Документация по внедрению сервиса Webim на сайтах, построенных на базе uCoz.ru.</p>
+                </li>
+                <li>
+                    <a href="">Установка HTML-кода Webim для сайтов на webasyst.ru</a>
+                    <p>Документация по внедрению сервиса Webim на сайтах, построенных на базе webasyst.ru.</p>
+                </li>
+                <li>
+                    <a href="">Установка HTML-кода Webim для любого сайта</a>
+                    <p>Документация по внедрению сервиса Webim на сайтах с другой CMS или написанных вручную.</p>
+                </li>
+            </ul>
 
+        </div>
+    </section>
 
+    <section class="section section_light">
+        <div class="container">
+            <span class="section__head section__head_2 section__head_width">
+                УСТАНОВКА ПРИЛОЖЕНИЯ
+                ДЛЯ ОПЕРАТОРОВ WEBIM DASHBOARD
+            </span>
+            <p class="section__text">
+                Чтобы быть на связи с клиентами всегда, установите приложение Webim Dashboard
+            </p>
+            <ul class="section__list section__list_p">
+                <li>
+                    <a href="">Установка приложения Webim Dashboard для iPhone</a>
+                    <p>
+                        Документация по установке дополнительного программного обеспечения для операторов
+                        <b>сервиса Webim</b>, использующих iPhone/iPad/etc от компании Apple.
+                    </p>
+                </li>
+                <li>
+                    <a href="">Установка приложения Webim Dashboard для Android</a>
+                    <p>
+                        Документация по установке дополнительного программного обеспечения для операторов
+                        <b>сервиса Webim</b>, использующих платформу Google Android.                    </p>
+                </li>
+                <li>
+                    <a href="">Установка приложения Webim Dashboard для Ubuntu</a>
+                    <p>
+                        Документация по установке дополнительного программного обеспечения для операторов
+                        <b>сервиса Webim</b>, использующих платформу Ubuntu.
+                    </p>
+                </li>
+                <li>
+                    <a href="">Установка приложения Webim Dashboard</a>
+                    <p>
+                        Документация по установке дополнительного программного обеспечения для операторов
+                        <b>сервиса Webim</b> под ОС Microsoft Windows.
+                    </p>
+                </li>
+                <li>
+                    <a href="">Создание приложения Webim для Mac OS</a>
+                    <p>
+                        Пошаговая инструкция создания приложения для оператора Webim для Mac OS с помощью Fluid
+                    </p>
+                </li>
+            </ul>
 
+        </div>
+    </section>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <section class="section section_dark">
+        <div class="container">
+            <span class="section__head section__head_2 ">
+                ЧТО ВАС ЖДЕТ ПОСЛЕ УСТАНОВКИ
+            </span>
+            <p class="section__text section__text_w">
+                Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет
+            </p>
+            <div class="block-step">
+                <div class="block-step__item">
+                    <div class="block-step__img block-step__img_1"></div>
+                    <p><span>Шаг 1.</span>Создание учетной записи компании и администратора</p>
+                </div>
+                <div class="block-step__item">
+                    <div class="block-step__img block-step__img_2"></div>
+                    <p><span>Шаг 2.</span>Активация учетной записи</p>
+                </div>
+                <div class="block-step__item">
+                    <div class="block-step__img block-step__img_3"></div>
+                    <p><span>Шаг 3.</span>Начальная настройка</p>
+                </div>
+                <div class="block-step__item">
+                    <div class="block-step__img block-step__img_4"></div>
+                    <p><span>Шаг 4.</span>Установка кнопки Webim на сайт</p>
+                </div>
+                <div class="block-step__item">
+                    <div class="block-step__img block-step__img_5"></div>
+                    <p><span>Шаг 5.</span>Регистрация оператора</p>
+                </div>
+                <div class="block-step__item">
+                    <div class="block-step__img block-step__img_6"></div>
+                    <p><span>Шаг 6.</span>Тест сервиса</p>
+                </div>
+            </div>
+            <div class="section__block-btn_2">
+                <a class="btn btn-link">Все возможности Webim</a>
+                <a class="btn btn-link btn-link_3">Протестировать бесплатно</a>
+            </div>
+        </div>
+    </section>
 
+    <section class="section section_light">
+        <div class="container">
+            <p class="section__text_2">
+                Webim – это не только онлайн-консультант. Интегрируйте и другие каналы,
+                чтобы клиенты могли обращаться к вам любым удобным способом
+            </p>
+            <div class="block-icon">
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_1"></div>
+                    <a class="block-icon__link">Социальные сети</a>
+                </div>
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_2"></div>
+                    <a class="block-icon__link">Форма обратной связи</a>
+                </div>
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_3"></div>
+                    <a class="block-icon__link">Чат в вашем мобильном приложении</a>
+                </div>
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_4"></div>
+                    <a class="block-icon__link">Мессенджеры</a>
+                </div>
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_5"></div>
+                    <a class="block-icon__link">Яндекс.Диалоги</a>
+                </div>
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_6"></div>
+                    <a class="block-icon__link">Электронная почта</a>
+                </div>
+                <div class="block-icon__item">
+                    <div class="block-icon__img block-icon__img_7"></div>
+                    <a class="block-icon__link">Чат-боты</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer__left">
+                <div class="footer__block-logo ">
+                    <div class="footer__logo footer__info"></div>
+                    <p>
+                        Webim 2008-2017
+                        Все права защищены
+                    </p>
+                </div>
+                <div class="footer__info">
+                    <a class="footer__link" href="tel:+7(800)500-49-32">+7 (800) 500-49-32</a>
+                    <div class="footer__block-tel">
+                        <a href="tel:+7(499)322-37-54">+7 (499) 322-37-54</a>
+                        <p>Москва, Серебряническая набережная, 29</p>
+                    </div>
+                    <div class="footer__block-tel">
+                        <a href="tel:+7(812)385-53-37">+7 (812) 385-53-37</a>
+                        <p>Санкт-Петербург, Чкаловский проспект, 15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <a class="footer__mail" href="mailto:contact@webim.ru">contact@webim.ru</a>
+                <a class="footer__mail footer__mail_margin" href="mailto:sales@webim.ru">sales@webim.ru</a>
+                <p class="footer__timetable">понедельник - пятница с 10.00 - 18.00</p>
+                <div class="footer__networks">
+                    <a class="footer__vk" href=""></a>
+                    <a class="footer__twitter" href=""></a>
+                    <a class="footer__facebook" href=""></a>
+                    <a class="footer__skype" href=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="app/libs/jquery-3.3.1.min.js"></script>
+<script src="app/libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
