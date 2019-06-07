@@ -1,0 +1,381 @@
+@import "_base";
+@import "_font";
+@import "_vars";
+@import "_reset";
+@import "_radio";
+
+.h-top {
+  width: 100%;
+  padding: 20px 0;
+  //background-color: #323232;
+  background: rgba(50,50,50,0.8);
+  z-index:10;
+  .container-fluid {
+    max-width: 1600px;
+    .flexRow;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__address {
+    .fontSime;
+    font-size:18px;
+    color: @colorMainFont;
+  }
+  &__logo {
+    font-size: 70px;
+    .flexRow;
+    .fontBold;
+    p {
+      z-index: 2;
+      color: @colorMainFont;
+      position: relative;
+      &:before {
+        content: " ";
+        z-index: 1;
+        position: absolute;
+        left: 94px;
+        top: 5px;
+        width: 39px;
+        height: 64px;
+        background: #96000b;
+        border-radius: 2px;
+      }
+    }
+    span {
+      color:@colorMainFont;
+      z-index: 9;
+    }
+  }
+  &__info {
+    .flexColumn;
+    align-items: center;
+  }
+  &__phone {
+    .font;
+    color: @colorMainFont;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  &__btn {
+    color: @colorMainFont;
+    background: @colorBtn;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    .fontSime;
+    border-radius: 5px;
+    &:hover, &:focus {
+      background: @colorMainFont;
+      border: 1px solid @colorBtn;
+      color:@colorBtn;
+      outline: none;
+    }
+  }
+}
+
+.h-menu {
+  //background: black;
+  background: rgba(150,0,11,1);
+  .container-fluid {
+    max-width: 1600px;
+    .flexRow;
+    justify-content: space-between;
+    align-items: center;
+  }
+  z-index:10;
+}
+
+.menu-list {
+  .flexRow;
+  width: 100%;
+  justify-content: space-between;
+  li {
+    list-style-type: none;
+    a {
+      font-size: 20px;
+      .fontSime;
+      color: #fff;
+      display: block;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      //transition: all ease 0.2s;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 4px solid #fff;
+      }
+    }
+  }
+}
+
+.s-main {
+  position: relative;
+  padding:50px  0;
+  .flexColumn;
+  align-items: center;
+  background: url("../img/5c155ab109061_proektirovanie-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+  &__content {
+    z-index: 3;
+    .flexColumn;
+  }
+  &:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(50,50,50,0.8);
+    z-index:1;
+  }
+  &__head {
+    .fontBold;
+    font-size: 30px;
+    color: @colorMainFont;
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__text {
+    .fontSime;
+    font-size: 22px;
+    color: @colorMainFont;
+    display: block;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    line-height: 27px;
+  }
+  &__t {
+    .font;
+    font-size: 18px;
+    color: @colorMainFont;
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 15px;
+    &:before {
+      content: ".";
+      position: absolute;
+      .fontBold;
+      font-size: 30px;
+      color:@colorBtn;
+      left: 0;
+      top: -14px
+    }
+    &_last {
+      margin-bottom: 40px;
+    }
+  }
+  &__btn {
+    color: @colorMainFont;
+    background: @colorBtn;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    .fontSime;
+    border-radius: 5px;
+    &:hover, &:focus {
+      background: @colorMainFont;
+      border: 1px solid @colorBtn;
+      color:@colorBtn;
+      outline: none;
+    }
+  }
+}
+
+.s-menu {
+  .flexRow;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    width:33.33%;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    &_1 {
+      background: url("../img/robot.jpeg") no-repeat;
+      background-size: contain;
+      background-position: center;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        //background: rgba(0,165,69,0.8);
+        background: rgba(50,50,50,0.8);
+      }
+    }
+    &_2 {
+      background: url("../img/proz.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+       // background: rgba(255,43,43,0.8);
+        background: rgba(50,50,50,0.8);
+      }
+    }
+    &_3 {
+      background: url("../img/port.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        //background: rgba(208,208,42,0.8);
+        background: rgba(50,50,50,0.8);
+      }
+    }
+    &_4 {
+      background: url("../img/3d.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        //background: rgba(0,132,255,0.8);
+        background: rgba(50,50,50,0.8);
+      }
+    }
+    &_5 {
+      background: url("../img/5c155ab109061_proektirovanie-1.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        //background: rgba(135,36,117,0.8);
+        background: rgba(50,50,50,0.8);
+      }
+    }
+    &_6 {
+      background: url("../img/3d.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+       // background: rgba(100,132,255,0.8);
+        background: rgba(50,50,50,0.8);
+      }
+    }
+  }
+  &__head {
+    .fontSime;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+    color: @colorMainFont;
+    z-index: 2;
+  }
+  &__desc {
+    .font;
+    font-size: 18px;
+    color: @colorMainFont;
+    display: block;
+    line-height: 26px;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+  &__link {
+    .font;
+    color: #000000;
+    background: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    &:hover {
+      text-decoration: none;
+      background: #d9d9d9;
+      cursor: pointer;
+      color: #000000;
+    }
+  }
+}
+
+.s-contact {
+  padding: 40px 0;
+  form {
+    .flexRow;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 30%;
+  }
+  &__head {
+    .fontSime;
+    color: @colorBtn;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

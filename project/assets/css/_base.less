@@ -1,0 +1,30 @@
+.input-s {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid @colorBtn;
+  height: 40px;
+  font-size: 18px;
+  .fontSime;
+  color: #000;
+  padding-left: 15px;
+}
+
+.btn {
+  width:30%;
+  height: 40px;
+  color: @colorMainFont;
+  background: @colorBtn;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  font-size: 16px;
+  text-transform: uppercase;
+  .fontSime;
+  border-radius: 5px;
+  &:hover, &:focus {
+    background: @colorMainFont;
+    border: 1px solid @colorBtn;
+    color:@colorBtn;
+    outline: none;
+  }
+}

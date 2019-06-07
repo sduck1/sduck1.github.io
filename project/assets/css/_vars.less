@@ -1,0 +1,34 @@
+@font:"OpenSans";
+@fontSime:"OpenSansSemiBold";
+@fontOpenSansBold:"OpenSansBold";
+
+.font {
+  font-family:@font,sans-serif;
+}
+.fontSime {
+  font-family: @fontSime, sans-serif;
+}
+.fontBold {
+  font-family: @fontOpenSansBold, sans-serif;
+}
+
+//@media #{$maxWidth}
+
+@maxWidth767:~"only screen and (max-width: 767px)";
+@maxWidth1199min768:~"only screen and (min-width: 768px) and (max-width: 1199px)";
+@maxWidth1200:~"only screen and (min-width: 1200px)";
+
+
+.flexRow (){
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn (){
+  display: flex;
+  flex-direction: column;
+}
+
+@colorDark:#3e3e3e;
+@colorYellow:#ffd11a;
+@colorMainFont:#fff;
+@colorBtn:#96000b;
